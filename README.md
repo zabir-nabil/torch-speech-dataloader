@@ -1,4 +1,4 @@
-# torch_speech_dataloader
+# torch-speech-dataloader
 A ready-to-use pytorch dataloader for audio classification, speech classification, speaker recognition, etc. with in-GPU augmentations.
 
  * PyTorch speech dataloader with 5 (or less) lines of code. `get_torch_speech_dataloader_from_config(config)`
