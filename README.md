@@ -56,13 +56,13 @@ for d, l in dummy_tsdl.get_batch():
    * `reverb_source_files_path`: A list of IR filepaths.
  * `musan_augmentation`:
    * `apply`: If apply is true, only then this augmentation will be applied to each audio individually.
-   * `musan_config`: {
+   * `musan_config`: 
+         ```{
             "music": ([list of music file paths], range_for_num_music_files_to_use, range_for_noise_snr),
             "speech": ([list of speech file paths], range_for_num_speech_files_to_use, range_for_noise_snr),
-        } `[example: augmentation_utils.placeholder_musan_config]`
-   * `mix_multiples_max_count`: Multiple noise types should be mixed (music + noise + ..). Number of noise types that should be mixed at most.
-   * `musan_max_len`: <= 0: take the musan noise and crop it with equal length (same as input audio);
-                       > 0: maximum length of the cropped musan noise (in secs.)
+        }``` `[example: augmentation_utils.placeholder_musan_config]`
+   * `mix_multiples_max_count`: Multiple noise types should be mixed (music + noise + `...`). Number of noise types that should be mixed at most.
+   * `musan_max_len`: `<= 0`: take the musan noise and crop it with equal length (same as input audio); `> 0`: maximum length of the cropped musan noise (in secs.).
  * `audio_augmentation`: List of `func`s that can be applied to a single audio with shape **[N,]**. 
- * `features`: Feature extraction. **[N,]** -> **[T,F]**
+ * `features`: Feature extraction. **[N,]** -> **[T,F]**.
  * `feature_augmentation`: List of `func`s that can be applied to a single feature with shape **[T,F]**.
