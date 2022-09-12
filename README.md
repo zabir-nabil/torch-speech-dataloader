@@ -1,4 +1,4 @@
-# torch-speech-dataloader
+## torch-speech-dataloader
 A ready-to-use pytorch dataloader for audio classification, speech classification, speaker recognition, etc. with in-GPU augmentations.
 
  * PyTorch speech dataloader with 5 (or less) lines of code. `get_torch_speech_dataloader_from_config(config)`
@@ -7,13 +7,13 @@ A ready-to-use pytorch dataloader for audio classification, speech classificatio
  * MUSAN-like augmentation with any set of source files. Customizable. [*cpu*]
  * Written in one night, may contain bugs!
 
-# Install
+## Install
 
 ```cmd
 pip install -U git+https://github.com/zabir-nabil/torch-speech-dataloader.git@main
 ```
 
-# Use
+## Use
 
 ```python
 from torch_speech_dataloader import get_torch_speech_dataloader, get_torch_speech_dataloader_from_config
@@ -38,3 +38,7 @@ for d, l in dummy_tsdl.get_batch():
     print(d.shape)
     print(l)
 ```
+
+## Others
+
+#### `config` parameters
