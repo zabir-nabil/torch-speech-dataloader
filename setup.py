@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='torch_speech_dataloader',
-    version='0.0.3',    
+    version='0.0.4',    
     description='A ready-to-use pytorch dataloader for audio classification, speech classification, speaker recognition, etc. with in-GPU augmentations',
     url='https://github.com/zabir-nabil/torch-speech-dataloader',
     author='Zabir Al Nazi',
